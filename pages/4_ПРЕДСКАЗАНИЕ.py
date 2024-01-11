@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 import streamlit as st 
 
 
-df= pd.read_csv('DataSet4_fil.xls')
+df= pd.read_csv('DataSet4_fil.xlsx')
 
 if df is not None:
     st.header("Датасет")

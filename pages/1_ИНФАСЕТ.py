@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-data2= pd.read_csv("DataSet4_fil.xls")
+data2= pd.read_csv("DataSet4_fil.xlsx")
 df2 = pd.DataFrame(data2)
 
 st.title('Информация о датасетe')
