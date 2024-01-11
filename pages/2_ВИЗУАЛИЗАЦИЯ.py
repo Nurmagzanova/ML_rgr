@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-data= pd.read_csv("DataSet4_fil.xlsx")
+data= pd.read_csv("DataSet4_fil.xls")
 
 st.title('Визуализация датасета')
 
