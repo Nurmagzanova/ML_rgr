@@ -20,7 +20,7 @@ def Prediction(model, X_test):
 
 
 
-data = st.file_uploader("Выберите файл датасета", type=["csv","xls"])
+data = st.file_uploader("Выберите файл датасета", type=["csv"])
 if data is not None:
     st.header("Датасет")
     df = pd.read_csv(data)
@@ -38,7 +38,9 @@ if data is not None:
         st.header("Обработка данных")
 
         df = df.drop_duplicates()
-    
+        
+        for i in df.columns[:-1]:
+            df[i]=df[i].map(lambda x: np.random.uniform(int(df.min()), int(df.max())) if pd.isna(x) else x)
 
         scaler = StandardScaler()
         data_scaler = scaler.fit_transform(df.drop(feature, axis=1))
