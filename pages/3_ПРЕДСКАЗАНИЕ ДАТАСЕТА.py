@@ -38,9 +38,7 @@ if data is not None:
         st.header("Обработка данных")
 
         df = df.drop_duplicates()
-        
-        for i in df.columns[:-1]:
-            df[i]=df[i].map(lambda x: np.random.uniform(int(df.min()), int(df.max())) if pd.isna(x) else x)
+    
 
         scaler = StandardScaler()
         data_scaler = scaler.fit_transform(df.drop(feature, axis=1))
