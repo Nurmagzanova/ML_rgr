@@ -20,7 +20,7 @@ def Prediction(model, X_test):
 
 
 
-data = st.file_uploader("Выберите файл датасета", type=["csv"])
+data = st.file_uploader("Выберите файл датасета", type=["csv","xls"])
 if data is not None:
     st.header("Датасет")
     df = pd.read_csv(data)
