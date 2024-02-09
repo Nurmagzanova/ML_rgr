@@ -31,7 +31,7 @@ if data is not None:
     feature = st.selectbox("Выберите предсказываемый признак",df.columns)
 
     st.title("Тип модели обучения")
-    model_type = st.selectbox("Выберите тип", [ 'Knn', 'Kmeans','Boosting', 'Bagging','Stacking', 'MLP' ])
+    model_type = st.selectbox("Выберите тип", [ 'Knn', 'Kmeans','Boosting', 'Bagging','Stacking', 'MLP', 'Nearest Neighbors Regression', 'Nearest Centroid Classifier'])
 
     button_clicked = st.button("Обработка данных и предсказание")
     if button_clicked:
