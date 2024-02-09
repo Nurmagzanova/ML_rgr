@@ -82,3 +82,11 @@ if data is not None:
                     with open('models/mlp.pkl', 'rb') as file:
                         mlp_model = pickle.load(file)
                     Prediction(mlp_model,X_test)
+            elif model_type == "Nearest Neighbors Regression":
+                    with open('models/knn (1).pkl', 'rb') as file:
+                        mlp_model = pickle.load(file)
+                    Prediction(mlp_model,X_test)
+            elif model_type == "Nearest Centroid Classifier":
+                    with open('models/clf.pkl', 'rb') as file:
+                        mlp_model = pickle.load(file)
+                    Prediction(mlp_model,X_test)
