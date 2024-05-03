@@ -10,7 +10,7 @@ st.header('Разработка Web-приложения (дашборда) дл
 
 st.markdown("---")
 
-st.subheader('ФИО')
+st.subheader('фио')
 st.markdown('Нурмагзанова Камила Жуматовна')
 
 st.subheader('Группа')
