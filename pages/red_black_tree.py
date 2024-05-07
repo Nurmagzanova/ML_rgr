@@ -399,4 +399,3 @@ if session.search_button:
 
 if session.inserted_values:
     visualization()
-
